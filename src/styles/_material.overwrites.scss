@@ -36,7 +36,7 @@ $mat-daniru: (
 );
 
 $app-primary: mat-palette($mat-daniru, 500);
-$app-accent:  mat-palette($mat-blue, 50, A100, A400);
+$app-accent:  mat-palette($mat-blue, 700, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $app-warn:  mat-palette($mat-red);
