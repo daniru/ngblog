@@ -11,6 +11,7 @@ import { ItemSectionComponent } from './components/item-section/item-section.com
 import { MarkdownPipe } from './pipes/markdown.pipe';
 import { ItemFilesComponent } from './components/item-files/item-files.component';
 import { PrettyfilePipe } from './pipes/prettyfile.pipe';
+import { ClipboardDirective } from './directives/clipboard.directive';
 
 @NgModule({
   imports: [
@@ -19,6 +20,6 @@ import { PrettyfilePipe } from './pipes/prettyfile.pipe';
     MdCardModule, MdButtonModule, MdTabsModule
   ],
   providers: [BlogService],
-  declarations: [ListComponent, ListItemComponent, ItemComponent, ItemHeaderComponent, ItemSectionComponent, MarkdownPipe, ItemFilesComponent, PrettyfilePipe]
+  declarations: [ListComponent, ListItemComponent, ItemComponent, ItemHeaderComponent, ItemSectionComponent, MarkdownPipe, ItemFilesComponent, PrettyfilePipe, ClipboardDirective]
 })
 export class BlogModule { }

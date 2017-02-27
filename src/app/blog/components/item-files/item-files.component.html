@@ -7,12 +7,12 @@
           <div class="filename" *ngIf="file.name">{{file.name}}</div>
         </section>
       </template>
-      <section class="down">
+      <section class="down" drClipboard [file]="file">
         <pre class="prettyprint prettyprinted" [innerHTML]="file | prettyfile"></pre>
       </section>
     </md-tab>
   </md-tab-group>
-  <section class="down" *ngIf="files.length === 1 && ! files[0].name">
+  <section class="down" *ngIf="files.length === 1 && ! files[0].name" drClipboard [file]="files[0]">
     <pre class="prettyprint prettyprinted" [innerHTML]="files[0] | prettyfile"></pre>
   </section>
 </section>
