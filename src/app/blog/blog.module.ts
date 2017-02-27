@@ -7,6 +7,8 @@ import { ListComponent } from './components/list/list.component';
 import { ListItemComponent } from './components/list-item/list-item.component';
 import { ItemComponent } from './components/item/item.component';
 import { ItemHeaderComponent } from './components/item-header/item-header.component';
+import { ItemSectionComponent } from './components/item-section/item-section.component';
+import { MarkdownPipe } from './pipes/markdown.pipe';
 
 @NgModule({
   imports: [
@@ -15,6 +17,6 @@ import { ItemHeaderComponent } from './components/item-header/item-header.compon
     MdCardModule, MdButtonModule
   ],
   providers: [BlogService],
-  declarations: [ListComponent, ListItemComponent, ItemComponent, ItemHeaderComponent]
+  declarations: [ListComponent, ListItemComponent, ItemComponent, ItemHeaderComponent, ItemSectionComponent, MarkdownPipe]
 })
 export class BlogModule { }
