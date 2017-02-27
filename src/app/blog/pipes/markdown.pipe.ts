@@ -2,6 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import * as MarkdownIt from 'markdown-it';
 
+declare var require: any;
 const markdownItAttrs = require('markdown-it-attrs');
 
 @Pipe({
