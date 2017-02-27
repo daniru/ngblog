@@ -12,6 +12,7 @@ import { MarkdownPipe } from './pipes/markdown.pipe';
 import { ItemFilesComponent } from './components/item-files/item-files.component';
 import { PrettyfilePipe } from './pipes/prettyfile.pipe';
 import { ClipboardDirective } from './directives/clipboard.directive';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 @NgModule({
   imports: [
@@ -20,6 +21,6 @@ import { ClipboardDirective } from './directives/clipboard.directive';
     MdCardModule, MdButtonModule, MdTabsModule
   ],
   providers: [BlogService],
-  declarations: [ListComponent, ListItemComponent, ItemComponent, ItemHeaderComponent, ItemSectionComponent, MarkdownPipe, ItemFilesComponent, PrettyfilePipe, ClipboardDirective]
+  declarations: [ListComponent, ListItemComponent, ItemComponent, ItemHeaderComponent, ItemSectionComponent, MarkdownPipe, ItemFilesComponent, PrettyfilePipe, ClipboardDirective, PaginationComponent]
 })
 export class BlogModule { }
